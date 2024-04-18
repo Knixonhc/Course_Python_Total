@@ -1,0 +1,6 @@
+print("Calculadora de Comisiones de Empresa")
+nombre_Empleado = input("Ingrese su Nombre y Apellido: ")
+valor_Ventas = round(float(input("Ingrese el valor de sus ventas totales: ")), 2)
+valor_Comision = round(valor_Ventas * 0.13, 2)
+valor_Total = round(valor_Ventas + valor_Comision, 2)
+print(f"Señor(a) {nombre_Empleado} el valor de sus ventas es: {valor_Ventas}, por lo tanto su comisión del 13% es: {valor_Comision}, su valor neto a recibir es: {valor_Total}")
