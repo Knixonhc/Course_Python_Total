@@ -1,0 +1,32 @@
+# Analizador de textos
+print('Analizador de textos - Kenji Herrera')
+# El dia de Kenji es muy largo, aprendiendo Python, 2 horas al día
+print('Ingrese el texto a analizar: ')
+texto = input()
+print('Ingrese 3 letras para buscar:')
+letra1 = input()
+letra2 = input()
+letra3 = input()
+print('\n' + '1er Seccion'.center(50, '-'))
+contador_letra1 = texto.count(letra1)
+print(f'La letra {letra1} se repite {contador_letra1} veces')
+contador_letra2 = texto.count(letra2)
+print(f'La letra {letra2} se repite {contador_letra2} veces')
+contador_letra3 = texto.count(letra3)
+print(f'La letra {letra3} se repite {contador_letra3} veces')
+print('\n' + '2da Seccion'.center(50, '-'))
+texto_en_lista = texto.split()
+palabras_total = len(texto_en_lista)
+print(f'El numero de palabras totales de su texto es: {palabras_total}')
+print('\n' + '3er Seccion'.center(50, '-'))
+letra_init_texto = texto[0]
+letra_final_texto = texto[len(texto)-1]
+print(f'La primera letra del texto es: {letra_init_texto}')
+print(f'La última letra del texto es: {letra_final_texto}')
+print('\n' + '4ta Seccion'.center(50, '-'))
+texto_en_lista.reverse()
+texto_inverso = ' '.join(texto_en_lista)
+print(f'El texto en inversa queda así:\n{texto_inverso}')
+print('\n' + '5ta Seccion'.center(50, '-'))
+verificador_palabra_Python = 'Python' in texto
+print(verificador_palabra_Python)
